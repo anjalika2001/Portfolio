@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjalika Sewwandi | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle d-lg-none" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="myself_profile.jpeg" alt="Anjalika Sewwandi">
+                </div>
+                <h4 class="profile-name">Anjalika Sewwandi</h4>
+                <p class="profile-title">GIS Technician & Full-Stack Developer IN NEW ZEALAND</p>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a class="nav-link active" data-section="home">HOME</a></li>
+                    <li><a class="nav-link" data-section="about">ABOUT</a></li>
+                    <li><a class="nav-link" data-section="skills">SKILLS</a></li>
+                    <li><a class="nav-link" data-section="education">EDUCATION</a></li>
+                    <li><a class="nav-link" data-section="experience">EXPERIENCE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section home-section active">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <h1>I am<br><span class="text-primary">a GIS Specialist</span></h1>
+                    <p class="hero-subtitle">100% Professional GIS Solutions Made by Anjalika</p>
+                    <button class="btn-view-portfolio">GET IN TOUCH ↗</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <canvas id="constellation-canvas"></canvas>
+                <div class="constellation-message">Move your mouse to explore</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section other-sections">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know more about my background and expertise</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 20px;">Hi, I'm Anjalika Sewwandi</h3>
+                        <p style="font-size: 14px; color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">Graduate GIS Technician , Researcher and a Full Stack Developer based in New Zealand. I specialize in Geographic Information Systems, spatial analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-section other-sections" style="background: var(--bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">Technical expertise and proficiency levels</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">GIS & Spatial Analysis</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python Programming</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AWS Cloud Services</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Database Management</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Data Analysis & Research</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section other-sections">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">My academic background and qualifications</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Master of Information Technology</h4>
+                        <h5>University of Waikato</h5>
+                        <span class="timeline-date">2024 - 2025</span>
+                        <p>Specialized in Geographic Information Systems and Software Engineering with focus on spatial analysis and data visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-section other-sections" style="background: var(--bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">My journey and achievements</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Research Assistance</h4>
+                        <h5>EIT</h5>
+                        <span class="timeline-date">2023 - 2024</span>
+                        <p>Practical methods to disrupt ransomware ecosystems on the dark web, focusing on prevention, detection, and response strategies.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>GIS Technician</h4>
+                        <h5>PRISM</h5>
+                        <span class="timeline-date">2025</span>
+                        <p>Mapping services focusing on identifying and mapping eligible forest areas on Fonterra farmland. Tools QGIS, LiDAR point clouds, Google Street View, and MAXAR to classify and age vegetation polygons, as well as capture and manage spatial data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
