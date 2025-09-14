@@ -145,7 +145,6 @@ body {
 .hero-left {
     width: 50%;
     padding: 80px 60px;
-    background: rgba(255, 255, 255, 0.95);
     display: flex;
     align-items: center;
     position: relative;
@@ -189,18 +188,14 @@ body {
 .hero-content h1 {
     font-size: 48px;
     font-weight: 400;
-    color: var(--text-dark);
+    color: #ffffff; /* Change from var(--text-dark) to white */
     line-height: 1.2;
     margin-bottom: 10px;
 }
 
-.hero-content .text-primary {
-    font-weight: 600;
-}
-
 .hero-subtitle {
     font-size: 14px;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8); /* Change from var(--text-light) to semi-transparent white */
     margin-bottom: 40px;
 }
 
@@ -208,8 +203,8 @@ body {
     display: inline-block;
     padding: 12px 30px;
     background: transparent;
-    border: 1px solid #ddd;
-    color: var(--text-dark);
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Change border color to white */
+    color: #ffffff; /* Change text color to white */
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -220,9 +215,9 @@ body {
 }
 
 .btn-view-portfolio:hover {
-    background: var(--text-dark);
-    color: white;
-    border-color: var(--text-dark);
+    background: rgba(255, 255, 255, 0.1); /* Subtle white background on hover */
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 /* Other Sections */
@@ -400,5 +395,33 @@ body {
         bottom: 15px;
         right: 15px;
         font-size: 0.7rem;
+    }
+}
+
+/* Professional Text Reveal Animation */
+.additional-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.additional-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Add a subtle initial animation for the first line */
+.hero-content h1 .text-primary:first-of-type {
+    animation: initialFadeIn 0.8s ease-out;
+}
+
+@keyframes initialFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
